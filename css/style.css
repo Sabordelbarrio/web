@@ -1,0 +1,111 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el body */
+body {
+    background-color: #c00909; /* Color rojo para el fondo */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    
+    
+    height: 100vh;
+    text-align: center;
+    flex-direction: column; /* Aseguramos que los elementos estén en una columna */
+}
+
+/* Contenedor principal que centraliza los títulos */
+.container {
+    text-align: center;
+    margin-bottom: 20px; /* Añadido margen para separar los títulos del menú */
+    margin-top: 50px; /* Añado margen superior para asegurar que los títulos no se peguen al borde superior */
+}
+
+/* Estilo para la imagen del título */
+.title-image {
+    width: 80%;  /* Ajusta el tamaño de la imagen, puedes modificar el porcentaje según sea necesario */
+    max-width: 800px; /* Puedes fijar un tamaño máximo si lo deseas */
+    height: auto; /* Para mantener las proporciones de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Contenedor de las hamburguesas */
+.container-2 {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff3e0;
+    border-radius: 10px;
+}
+
+/* Título de hamburguesas */
+.title-3 {
+    font-size: 2.5rem;
+    color: #e56c12; /* Color de letra #e56c12 */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos del menú */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    flex-direction: column; /* Aseguramos que los elementos estén alineados verticalmente */
+    align-items: flex-start; /* Alineamos los elementos a la izquierda */
+}
+
+.menu-item .item-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-item .item-subname {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    color: #e74c3c; /* Color rojizo para que resalte */
+    font-style: italic; /* Estilo itálico para diferenciarlo aún más */
+    margin-top: 5px; /* Un pequeño espacio entre el nombre y la descripción */
+    line-height: 1.3; /* Espaciado entre las líneas para mejor legibilidad */
+}
+
+.menu-item .item-price {
+    font-size: 1.5rem;
+    color: #e56c12; /* Color de precio */
+    font-weight: bold;
+    align-self: flex-end; /* Alineamos el precio a la derecha */
+}
+
+
+/* Contenedor de las hamburguesas */
+.container-3 {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fead01;
+    border-radius: 10px;
+}
+
+/* Contenedor para las imágenes fuera del flujo */
+.images-container {
+    position: absolute; /* Posicionamos las imágenes fuera del flujo normal */
+    top: 250px; /* Distancia desde la parte superior de la página */
+    right: 1px; /* Alineamos las imágenes a la derecha */
+    display: flex;
+    flex-direction: column; /* Apilamos las imágenes verticalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para las imágenes */
+.menu-image {
+    width: 500px; /* Ajustamos el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
